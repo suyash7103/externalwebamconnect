@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CameraApp</string>
+    <string name="connect_button_text">Connect Webcam</string>
+
+</resources>
