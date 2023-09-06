@@ -63,16 +63,13 @@ class MainActivity : AppCompatActivity() {
 
     private val surfaceCallback = object : SurfaceHolder.Callback {
         override fun surfaceCreated(holder: SurfaceHolder) {
-            // Surface is created; open the camera
             openCamera()
         }
 
         override fun surfaceChanged(holder: SurfaceHolder, format: Int, width: Int, height: Int) {
-            // Surface dimensions changed; handle it here if needed
         }
 
         override fun surfaceDestroyed(holder: SurfaceHolder) {
-            // Surface is destroyed; release resources
             cameraDevice?.close()
         }
     }
@@ -107,7 +104,6 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onConfigureFailed(session: CameraCaptureSession) {
-                    // Handle configuration failure here
                 }
             },
             cameraHandler
@@ -119,10 +115,8 @@ class MainActivity : AppCompatActivity() {
 
         if (requestCode == CAMERA_PERMISSION_REQUEST) {
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                // Permission granted, open the camera
                 openCamera()
             } else {
-                // Permission denied, handle this case (e.g., show a message or exit the app)
                 finish()
             }
         }

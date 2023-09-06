@@ -52,9 +52,12 @@ android {
 dependencies {
     implementation ("com.google.android.material:camera-view:1.1.0-alpha08")
 
-    implementation ("androidx.camera:camera-core:1.1.0")
-    implementation ("androidx.camera:camera-camera2:1.1.0")
-    implementation ("androidx.camera:camera-lifecycle:1.1.0")
+    implementation ("androidx.camera.camera2:camera2:1.1.0")
+    implementation ("androidx.camera.lifecycle:lifecycle-camera:1.1.0")
+    implementation ("androidx.camera:camera-camera2:1.2.3")
+    implementation ("androidx.camera:camera-core:1.2.3")
+    implementation ("androidx.camera:camera-camera2:1.2.3")
+    implementation ("androidx.camera:camera-lifecycle:1.2.3")
     implementation ("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.core:core-ktx:1.10.1.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
